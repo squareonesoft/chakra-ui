@@ -127,7 +127,7 @@ var motionVariants = {
   }
 }; // @future: only call `motion(chakra.div)` when we drop framer-motion v3 support
 
-var MotionDiv = "custom" in _framerMotion.motion ? _framerMotion.motion.custom(_system.chakra.div) : (0, _framerMotion.motion)(_system.chakra.div);
+var MotionDiv = "custom" in _framerMotion.motion ? _framerMotion.createDomMotionComponent("custom")(_system.chakra.div) : (0, _framerMotion.motion)(_system.chakra.div);
 var MenuList = /*#__PURE__*/(0, _system.forwardRef)(function (props, ref) {
   var _props$zIndex, _styles$list;
 
@@ -214,7 +214,7 @@ var MenuItem = /*#__PURE__*/(0, _system.forwardRef)(function (props, ref) {
   var _children = shouldWrap ? /*#__PURE__*/React.createElement("span", {
     style: {
       pointerEvents: "none",
-      flex: 1
+      flex: "1 1 auto"
     }
   }, children) : children;
 
@@ -259,7 +259,7 @@ var MenuItemOption = /*#__PURE__*/(0, _system.forwardRef)(function (props, ref) 
     opacity: props.isChecked ? 1 : 0
   }, icon || /*#__PURE__*/React.createElement(CheckIcon, null)), /*#__PURE__*/React.createElement("span", {
     style: {
-      flex: 1
+      flex: "1 1 auto"
     }
   }, optionProps.children));
 });

@@ -4,7 +4,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 import { chakra, forwardRef, omitThemingProps, StylesProvider, useMultiStyleConfig, useStyles, useTheme } from "@chakra-ui/system";
 import { cx, runIfFn, __DEV__ } from "@chakra-ui/utils";
-import { motion } from "framer-motion";
+import { motion, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { MenuDescendantsProvider, MenuProvider, useMenu, useMenuButton, useMenuContext, useMenuItem, useMenuList, useMenuOption, useMenuOptionGroup, useMenuPositioner } from "./use-menu";
 
@@ -206,7 +206,7 @@ export var MenuItem = /*#__PURE__*/forwardRef((props, ref) => {
   var _children = shouldWrap ? /*#__PURE__*/React.createElement("span", {
     style: {
       pointerEvents: "none",
-      flex: 1
+      flex: "1 1 auto"
     }
   }, children) : children;
 
@@ -249,7 +249,7 @@ export var MenuItemOption = /*#__PURE__*/forwardRef((props, ref) => {
     opacity: props.isChecked ? 1 : 0
   }, icon || /*#__PURE__*/React.createElement(CheckIcon, null)), /*#__PURE__*/React.createElement("span", {
     style: {
-      flex: 1
+      flex: "1 1 auto"
     }
   }, optionProps.children));
 });

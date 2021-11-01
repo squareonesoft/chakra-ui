@@ -63,7 +63,7 @@ var baseStyleCloseButton = {
 var baseStyleBody = {
   px: 6,
   py: 2,
-  flex: 1,
+  flex: "1 1 auto",
   overflow: "auto"
 };
 var baseStyleFooter = {

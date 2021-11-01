@@ -117,7 +117,7 @@ var Toast = function Toast(props) {
   var style = React.useMemo(function () {
     return (0, _toast.getToastStyle)(position);
   }, [position]);
-  return /*#__PURE__*/React.createElement(_framerMotion.motion.li, {
+  return /*#__PURE__*/React.createElement(_framerMotion.createDomMotionComponent("li"), {
     layout: true,
     className: "chakra-toast",
     variants: toastMotionVariants,

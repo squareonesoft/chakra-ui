@@ -96,7 +96,7 @@ var Slide = /*#__PURE__*/React.forwardRef(function (props, ref) {
   };
   return /*#__PURE__*/React.createElement(_framerMotion.AnimatePresence, {
     custom: custom
-  }, show && /*#__PURE__*/React.createElement(_framerMotion.motion.div, _extends({
+  }, show && /*#__PURE__*/React.createElement(_framerMotion.createDomMotionComponent("div"), _extends({
     ref: ref,
     initial: "exit",
     className: (0, _utils.cx)("chakra-slide", className),

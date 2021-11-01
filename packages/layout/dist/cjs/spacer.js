@@ -15,7 +15,7 @@ var _utils = require("@chakra-ui/utils");
  */
 var Spacer = (0, _system.chakra)("div", {
   baseStyle: {
-    flex: 1,
+    flex: "1 1 auto",
     justifySelf: "stretch",
     alignSelf: "stretch"
   }

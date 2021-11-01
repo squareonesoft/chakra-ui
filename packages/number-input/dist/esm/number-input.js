@@ -125,7 +125,7 @@ export var StyledStepper = chakra("div", {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    flex: 1,
+    flex: "1 1 auto",
     transitionProperty: "common",
     transitionDuration: "normal",
     userSelect: "none",

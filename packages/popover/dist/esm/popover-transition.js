@@ -1,7 +1,7 @@
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 import { chakra } from "@chakra-ui/system";
-import { motion } from "framer-motion";
+import { motion, createDomMotionComponent } from "framer-motion";
 import { mergeWith } from "@chakra-ui/utils";
 import React from "react";
 import { usePopoverContext } from "./popover-context"; // TODO: consider moving this to some util

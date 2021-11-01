@@ -40,7 +40,7 @@ var transitions = {
   }),
   none: {}
 };
-var Motion = (0, _system.chakra)(_framerMotion.motion.section);
+var Motion = (0, _system.chakra)(_framerMotion.createDomMotionComponent("section"));
 var ModalTransition = /*#__PURE__*/React.forwardRef(function (props, ref) {
   var preset = props.preset,
       rest = _objectWithoutPropertiesLoose(props, ["preset"]);

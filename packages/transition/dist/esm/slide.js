@@ -3,7 +3,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 import { cx, __DEV__ } from "@chakra-ui/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { slideTransition, TransitionEasings, withDelay } from "./transition-utils";
 var defaultTransition = {
@@ -86,7 +86,7 @@ export var Slide = /*#__PURE__*/React.forwardRef((props, ref) => {
   };
   return /*#__PURE__*/React.createElement(AnimatePresence, {
     custom: custom
-  }, show && /*#__PURE__*/React.createElement(motion.div, _extends({
+  }, show && /*#__PURE__*/React.createElement(createDomMotionComponent("div"), _extends({
     ref: ref,
     initial: "exit",
     className: cx("chakra-slide", className),

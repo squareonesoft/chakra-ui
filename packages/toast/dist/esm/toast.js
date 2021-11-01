@@ -1,7 +1,7 @@
 import { useTimeout, useUpdateEffect } from "@chakra-ui/hooks";
 import { isFunction, __DEV__ } from "@chakra-ui/utils";
 import ReachAlert from "@reach/alert";
-import { motion, useIsPresent } from "framer-motion";
+import { motion, useIsPresent, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { getToastStyle } from "./toast.utils";
 /**
@@ -90,7 +90,7 @@ export var Toast = props => {
   }, [isPresent, requestClose, onRequestRemove]);
   useTimeout(close, delay);
   var style = React.useMemo(() => getToastStyle(position), [position]);
-  return /*#__PURE__*/React.createElement(motion.li, {
+  return /*#__PURE__*/React.createElement(createDomMotionComponent("li"), {
     layout: true,
     className: "chakra-toast",
     variants: toastMotionVariants,

@@ -4,7 +4,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 import { chakra } from "@chakra-ui/system";
 import { scaleFadeConfig, slideFadeConfig } from "@chakra-ui/transition";
-import { motion } from "framer-motion";
+import { motion, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 var transitions = {
   slideInBottom: _extends({}, slideFadeConfig, {
@@ -27,7 +27,7 @@ var transitions = {
   }),
   none: {}
 };
-var Motion = chakra(motion.section);
+var Motion = chakra(createDomMotionComponent("section"));
 export var ModalTransition = /*#__PURE__*/React.forwardRef((props, ref) => {
   var {
     preset

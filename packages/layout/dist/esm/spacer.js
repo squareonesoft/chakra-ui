@@ -9,7 +9,7 @@ import { __DEV__ } from "@chakra-ui/utils";
  */
 export var Spacer = chakra("div", {
   baseStyle: {
-    flex: 1,
+    flex: "1 1 auto",
     justifySelf: "stretch",
     alignSelf: "stretch"
   }

@@ -7,11 +7,11 @@ import { Portal } from "@chakra-ui/portal";
 import { chakra, forwardRef, omitThemingProps, useStyleConfig, useTheme } from "@chakra-ui/system";
 import { isString, omit, pick, __DEV__, getCSSVar } from "@chakra-ui/utils";
 import { VisuallyHidden } from "@chakra-ui/visually-hidden";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { scale } from "./tooltip.transition";
 import { useTooltip } from "./use-tooltip";
-var StyledTooltip = chakra(motion.div);
+var StyledTooltip = chakra(createDomMotionComponent("div"));
 /**
  * Tooltips display informative text when users hover, focus on, or tap an element.
  *

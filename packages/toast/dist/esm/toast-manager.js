@@ -3,7 +3,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 import { objectKeys } from "@chakra-ui/utils";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { Toast } from "./toast";
 import { findToast, getToastPosition } from "./toast.utils";

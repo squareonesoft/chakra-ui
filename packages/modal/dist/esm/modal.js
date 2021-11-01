@@ -9,7 +9,7 @@ import { chakra, forwardRef, StylesProvider, useMultiStyleConfig, useStyles } fr
 import { fadeConfig } from "@chakra-ui/transition";
 import { callAllHandlers, cx, __DEV__ } from "@chakra-ui/utils";
 import { createContext } from "@chakra-ui/react-utils";
-import { AnimatePresence, motion, usePresence } from "framer-motion";
+import { AnimatePresence, motion, usePresence, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { RemoveScroll } from "react-remove-scroll";
 import { ModalTransition } from "./modal-transition";
@@ -79,7 +79,7 @@ if (__DEV__) {
   Modal.displayName = "Modal";
 }
 
-var MotionDiv = chakra(motion.div);
+var MotionDiv = chakra(createDomMotionComponent("div"));
 /**
  * ModalContent is used to group modal's content. It has all the
  * necessary `aria-*` properties to indicate that it is a modal
@@ -250,7 +250,7 @@ export var ModalHeader = /*#__PURE__*/forwardRef((props, ref) => {
   var styles = useStyles();
 
   var headerStyles = _extends({
-    flex: 0
+    flex: "0 1 auto"
   }, styles.header);
 
   return /*#__PURE__*/React.createElement(chakra.header, _extends({

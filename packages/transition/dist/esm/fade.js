@@ -3,7 +3,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 import { cx, __DEV__ } from "@chakra-ui/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, createDomMotionComponent } from "framer-motion";
 import * as React from "react";
 import { TransitionDefaults, withDelay } from "./transition-utils";
 var variants = {
@@ -62,7 +62,7 @@ export var Fade = /*#__PURE__*/React.forwardRef((props, ref) => {
   };
   return /*#__PURE__*/React.createElement(AnimatePresence, {
     custom: custom
-  }, show && /*#__PURE__*/React.createElement(motion.div, _extends({
+  }, show && /*#__PURE__*/React.createElement(createDomMotionComponent("div"), _extends({
     ref: ref,
     className: cx("chakra-fade", className),
     custom: custom

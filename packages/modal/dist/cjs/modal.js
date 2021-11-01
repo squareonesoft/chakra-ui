@@ -105,7 +105,7 @@ if (_utils.__DEV__) {
   Modal.displayName = "Modal";
 }
 
-var MotionDiv = (0, _system.chakra)(_framerMotion.motion.div);
+var MotionDiv = (0, _system.chakra)(_framerMotion.createDomMotionComponent("div"));
 /**
  * ModalContent is used to group modal's content. It has all the
  * necessary `aria-*` properties to indicate that it is a modal
@@ -278,7 +278,7 @@ var ModalHeader = /*#__PURE__*/(0, _system.forwardRef)(function (props, ref) {
   var styles = (0, _system.useStyles)();
 
   var headerStyles = _extends({
-    flex: 0
+    flex: "0 1 auto"
   }, styles.header);
 
   return /*#__PURE__*/React.createElement(_system.chakra.header, _extends({

@@ -3,7 +3,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 import { chakra } from "@chakra-ui/system";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, createDomMotionComponent } from "framer-motion";
 import * as React from "react"; // @future: only call `motion(chakra.svg)` when we drop framer-motion v3 support
 
 var MotionSvg = "custom" in motion ? motion.custom(chakra.svg) : motion(chakra.svg);
@@ -73,7 +73,7 @@ var CheckboxTransition = (_ref) => {
   } = _ref;
   return /*#__PURE__*/React.createElement(AnimatePresence, {
     initial: false
-  }, open && /*#__PURE__*/React.createElement(motion.div, {
+  }, open && /*#__PURE__*/React.createElement(createDomMotionComponent("div"), {
     variants: {
       unchecked: {
         scale: 0.5
