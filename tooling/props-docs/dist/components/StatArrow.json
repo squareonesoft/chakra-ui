@@ -1,0 +1,1 @@
+{"description":"","displayName":"StatArrow","methods":[],"props":{"type":{"defaultValue":null,"description":"","name":"type","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/stat/dist/types/stat.d.ts","name":"StatArrowProps"},"required":false,"type":{"name":"\"increase\" | \"decrease\""}}}}

@@ -1,0 +1,1 @@
+{"description":"InputRightAddon\n\nElement to append to the right of an input","displayName":"InputRightAddon","methods":[],"props":{"placement":{"defaultValue":null,"description":"","name":"placement","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/input/dist/types/input-addon.d.ts","name":"InputAddonProps"},"required":false,"type":{"name":"\"right\" | \"left\""}}}}

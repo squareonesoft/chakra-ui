@@ -1,0 +1,1 @@
+{"description":"","displayName":"InputLeftElement","methods":[],"props":{"placement":{"defaultValue":null,"description":"","name":"placement","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/input/dist/types/input-element.d.ts","name":"InputElementProps"},"required":false,"type":{"name":"\"right\" | \"left\""}}}}

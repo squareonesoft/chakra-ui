@@ -1,0 +1,1 @@
+{"description":"TagCloseButton is used to close \"remove\" the tag","displayName":"TagCloseButton","methods":[],"props":{"isDisabled":{"defaultValue":null,"description":"","name":"isDisabled","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/tag/dist/types/tag.d.ts","name":"TagCloseButtonProps"},"required":false,"type":{"name":"boolean"}}}}

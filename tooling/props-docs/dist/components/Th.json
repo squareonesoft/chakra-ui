@@ -1,0 +1,1 @@
+{"description":"","displayName":"Th","methods":[],"props":{"isNumeric":{"defaultValue":null,"description":"Aligns the cell content to the right","name":"isNumeric","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/table/dist/types/table.d.ts","name":"TableColumnHeaderProps"},"required":false,"type":{"name":"boolean"}}}}

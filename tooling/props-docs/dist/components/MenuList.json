@@ -1,0 +1,1 @@
+{"description":"","displayName":"MenuList","methods":[],"props":{"rootProps":{"defaultValue":null,"description":"","name":"rootProps","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/menu/dist/types/menu.d.ts","name":"MenuListProps"},"required":false,"type":{"name":"HTMLChakraProps<\"div\">"}}}}

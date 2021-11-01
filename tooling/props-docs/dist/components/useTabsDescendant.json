@@ -1,0 +1,1 @@
+{"description":"","displayName":"useTabsDescendant","methods":[],"props":{"disabled":{"defaultValue":null,"description":"","name":"disabled","required":false,"type":{"name":"boolean"}},"id":{"defaultValue":null,"description":"","name":"id","required":false,"type":{"name":"string"}}}}

@@ -1,0 +1,1 @@
+{"description":"","displayName":"SelectField","methods":[],"props":{"isDisabled":{"defaultValue":null,"description":"","name":"isDisabled","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/select/dist/types/select.d.ts","name":"SelectFieldProps"},"required":false,"type":{"name":"boolean"}}}}

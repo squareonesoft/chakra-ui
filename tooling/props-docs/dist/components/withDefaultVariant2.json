@@ -1,0 +1,1 @@
+{"description":"","displayName":"withDefaultVariant","methods":[],"props":{"variant":{"defaultValue":null,"description":"","name":"variant","required":true,"type":{"name":"string | undefined"}},"components":{"defaultValue":null,"description":"","name":"components","required":false,"type":{"name":"string[] | Record<string, any>"}}}}

@@ -1,0 +1,1 @@
+{"description":"","displayName":"ThemeProvider","methods":[],"props":{"cssVarsRoot":{"defaultValue":{"value":"\":host, :root\""},"description":"The element to attach the CSS custom properties to.","name":"cssVarsRoot","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/system/dist/types/providers.d.ts","name":"ThemeProviderProps"},"required":false,"type":{"name":"string"}}}}

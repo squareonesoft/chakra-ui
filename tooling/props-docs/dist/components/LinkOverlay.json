@@ -1,0 +1,1 @@
+{"description":"","displayName":"LinkOverlay","methods":[],"props":{"isExternal":{"defaultValue":null,"description":"If `true`, the link will open in new tab","name":"isExternal","parent":{"fileName":"/data/tmp/chakra-ui-sq1/packages/layout/dist/types/link-box.d.ts","name":"LinkOverlayProps"},"required":false,"type":{"name":"boolean"}}}}
